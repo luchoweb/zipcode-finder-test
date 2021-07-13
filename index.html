@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Zip Code</title>
+	<meta name="description" content="A frontend dev aptitude test by Deep Space Robots.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<main class="zipCode">
+		<div class="zipCode__form">
+			<h1>Zip Code Finder</h1>
+			<input type="text" placeholder="Zip Code Here" id="zipCode" class="form__input">
+			<button id="submit-btn" class="form__btn" onclick="javascript:getLocationDetails(document.getElementById('zipCode').value);">
+				Get location details
+			</button>
+		</div>
+	
+		<div id="location-details" class="zipCode__details">
+			<div class="container">
+				<h2>Location details</h2>
+				<ul class="location__details">
+					<li class="location__item">
+						<p><strong>Location name</strong>: <span id="location-name"></span></p>
+					</li>
+					<li class="location__item">
+						<p><strong>State</strong>: <span id="state-name"></span></p>
+					</li>
+					<li class="location__item--img">
+						<img id="state-svg" src="states/WA.svg" alt="state">
+					</li>
+					<li class="location__item">
+						<a href="#" id="map-url" target="_blank" class="location__link">View on Google Maps</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	
+		<div class="zipCode__error" id="error-msg"></div>
+	</main>
+
+	<script src="script.js"></script>
+</body>
+</html>
+
