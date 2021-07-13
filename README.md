@@ -16,9 +16,3 @@ This is a challenge designed to test your ability to fetch data from an API, and
 - You may use the included US State images in /states.
 - You may not use 3rd-party libraries.
 - The code should work in the latest version of Chrome.
-
-## Instructions
-- Fork this repo to a private repo in your own GitHub account.
-- Complete the challenge.
-- Push your solution to your private repo.
-- Share your repo with @thisanimus and @robmomary.
