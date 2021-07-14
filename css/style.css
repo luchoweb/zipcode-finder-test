@@ -1,0 +1,129 @@
+:root {
+    --red-color: #ef5350;
+    --red-dark-color: #ca413e;
+    --gray-color: #f0f0f0;
+    --gray-dark-color: #999;
+    --dark-color: #212121;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    color: var(--dark-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+h1, h2, strong {
+    font-weight: bold;
+}
+
+.zipCode {
+    background-image: url(../images/bg.png);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#location-details,
+#error-msg {
+    display: none;
+}
+
+.zipCode__form {
+    background-color: rgba(70, 70, 70, 0.1);
+    padding: 3rem 0;
+    text-align: center;
+    width: 100%;
+}
+.zipCode__form h1 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.form__input {
+    appearance: none;
+    border: 1px solid #aaa;
+    border-radius: .3rem;
+    padding: .5rem
+}
+
+.form__btn {
+    appearance: none;
+    background-color: var(--dark-color);
+    border: 1px solid var(--dark-color);
+    border-radius: .3rem;
+    color: #fff;
+    cursor: pointer;
+    padding: .5rem 1rem;
+    transition: all .2s ease-in-out;
+}
+.form__btn:hover,
+.form__btn:disabled {
+    background-color: var(--gray-color);
+    border: 1px solid var(--gray-dark-color);
+    color: var(--dark-color);
+}
+
+.zipCode__details {
+    padding-top: 1rem;
+    width: 100%;
+}
+.zipCode__details .container {
+    margin: 0 auto;
+    max-width: 320px;
+    width: 95%;
+}
+
+.zipCode__details .card {
+    background-color: #fff;
+    border-radius: .2rem;
+    box-shadow: 0 0 3px var(--gray-dark-color);
+    margin-top: 1rem;
+    padding: 1rem;
+}
+.zipCode__details .card__title {
+    font-size: 30px;
+}
+.zipCode__details .card__title span {
+    color: var(--gray-dark-color);
+    display: block;
+    font-size: 16px;
+}
+.zipCode__details .card__image,
+.zipCode__details .card__image img {
+    width: 100%;
+}
+.zipCode__details .card__image figcaption {
+    font-weight: bold;
+}
+.zipCode__details .card__image figcaption span {
+    font-weight: normal;
+}
+.zipCode__details .card__footer {
+    padding: 2rem 0 .5rem 0;
+}
+.zipCode__details .card__link {
+    background-color: var(--red-color);
+    border-radius: .2rem;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    padding: .5rem 1rem;
+    text-decoration: none;
+}
+.zipCode__details .card__link:hover {
+    background-color: var(--red-dark-color);
+}
+
+.zipCode__error {
+    background-color: var(--red-color);
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%;
+}
